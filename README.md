@@ -14,26 +14,26 @@ The purpose of this analysis was to use imbalanced-learn and scikit-learn librar
 <img width="856" alt="oversam" src="https://user-images.githubusercontent.com/65638310/163723030-9a55429d-729c-4644-ad58-f17908c82d81.png">
 
 
-* SMOTE Results
+* SMOTE Results:
     - The balance accuracy score was 0.6234433606890912, or 62%
     - The average precision was 99%, and recall of 64%
 
 <img width="748" alt="SMOTE" src="https://user-images.githubusercontent.com/65638310/163724076-b17d268c-38f0-4f14-8d73-f9273bc10acc.png">
 
-* Undersampling Results
+* Undersampling Results:
     - The balance accuracy score was 0.5225775650555374, or 52%
     - The average precision was 99%, and recall of 43%
      
 <img width="829" alt="undersa" src="https://user-images.githubusercontent.com/65638310/163724089-9bc42806-c8b5-4baf-98e2-1502b63341b2.png">
 
 
-* Combination of Over and Undersampling Results
+* Combination of Over and Undersampling Results:
      - The balance accuracy score was 0.6531287896185101, or 65%
      - The average precision was 99%, and recall of 62%
 
 <img width="727" alt="combo" src="https://user-images.githubusercontent.com/65638310/163724096-d22d130b-0fd1-4ced-8c31-1205843c402b.png">
 
-* BalancedRandomForestClassifier Results
+* BalancedRandomForestClassifier Results:
      - The balance accuracy score was 0.7877672625306695, or 79%
      - The average precision was 99%, and recall of 91%
  
@@ -41,7 +41,7 @@ The purpose of this analysis was to use imbalanced-learn and scikit-learn librar
 <img width="828" alt="BalaF" src="https://user-images.githubusercontent.com/65638310/163724112-4128c9c3-8f02-410c-bdc6-eb0123c681be.png">
 
 
-* EasyEnsembleClassifier Results
+* EasyEnsembleClassifier Results:
     - The balance accuracy score was 0.925427358175101, or 93%
     - The average precision was 99%, and recall of 94%
 
@@ -53,4 +53,6 @@ The purpose of this analysis was to use imbalanced-learn and scikit-learn librar
 <!--There is a summary of the results (2 pt)
 There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt) -->
 
-After looking at all of the data above, we can conclude that the best prediction model for credit card risk is EasyEnsembleClassifier. The EasyEnsebleClassifier has the highest rate of precision and accuracy.  
+After looking at all of the data above, we can conclude that the best prediction model for credit card risk is EasyEnsembleClassifier. The EasyEnsebleClassifier has the highest rate of precision and accuracy of 93%.  
+
+Resamping the data had relatively low predictions with it being in the 50-60s. Although a SMOTE did seem to have a better prediction rate, it was still low to access credit card risk. Ensemble had the better prediction compared to resampling. The rate of precision reached the 90s with EasyEnsembleClassifier being the highest out of the two.
